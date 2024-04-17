@@ -24,6 +24,8 @@ def predict(Buying, Maint, Doors, Persons, Lug_boot, safety);
  prediction =model.predict([Buying, Maint, Doors, Persons, Lug_boot, safety])
  return prediction
 
+st.title('Car Evaluation Classification')
+st.image("""https://media.zigcdn.com/media/model/2022/Jun/rear-3-4-right-1560931890_600x400.jpg""")
 st.header('Enter the Information of the Car:')
 st.text("vhigh = 1 high = 2 med = 3 low = 4")
 Buying = st.number_input('buying:', min_value=1, max_value=4, value=1)
