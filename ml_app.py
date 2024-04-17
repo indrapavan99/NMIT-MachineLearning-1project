@@ -12,7 +12,7 @@ model = joblib.load('finalized_model.joblib')
 
 @st.cache 
 
-def predict(Buying, Maint, Doors, Persons, Lug_boot, safety);
+def predict(Buying, Maint, Doors, Persons, Lug_boot, safety):
  if Safety == 'med':
   Safety = 1
  elif Safety == 'high':
